@@ -13,7 +13,7 @@ app.directive('footer', function (FooterFactory) {
 						d3.select('body').style('background', '#000000')
 						break;
 					case 'beach':
-						d3.select('body').style('background', 'url("/Users/WillsHome/Projects/audio-visualizer/niteroi_soccer_picture.png")')
+						d3.select('body').style('background-image', 'url("/Users/WillsHome/Projects/audio-visualizer/niteroi_soccer_picture.png")')
 						d3.select('body').style('background-size', 'contain')
 						break;
 					case 'bottles':
