@@ -13,15 +13,15 @@ app.directive('footer', function (FooterFactory) {
 						d3.select('body').style('background', '#000000')
 						break;
 					case 'beach':
-						d3.select('body').style('background-image', 'url("/Users/WillsHome/datavisualizer/niteroi_soccer_picture.png")')
+						d3.select('body').style('background', 'url("/Users/WillsHome/Projects/audio-visualizer/niteroi_soccer_picture.png")')
 						d3.select('body').style('background-size', 'contain')
 						break;
 					case 'bottles':
-						d3.select('body').style('background-image', 'url("/Users/WillsHome/datavisualizer/puff_daddy.jpg")')
+						d3.select('body').style('background-image', 'url("/Users/WillsHome/Projects/audio-visualizer/puff_daddy.jpg")')
 						d3.select('body').style('background-size', 'contain')
 						break;
 					case 'hill':
-						d3.select('body').style('background-image', 'url("/Users/WillsHome/datavisualizer/saopaulo_hill.jpg")')
+						d3.select('body').style('background-image', 'url("/Users/WillsHome/Projects/audio-visualizer/saopaulo_hill.jpg")')
 						d3.select('body').style('background-size', 'contain')
 						break;
 				}
