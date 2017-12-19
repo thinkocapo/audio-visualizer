@@ -1,0 +1,61 @@
+
+<!-- <button ng-click="sayWord()">CLICKME</button> -->
+
+
+<div style="float: left;">
+<div id="holder" style="border: 1px solid white; text-align:center; background-color:grey">
+Drag your file here
+</div>
+
+
+<div style="float:left; margin: 3px 0 0 4px">
+<button class="play">Play</button>
+<button class="stop">Stop</button>
+</div>
+<!-- <p>HHHHEEEYYY</p> -->
+
+
+</div>
+
+<div>
+<form name="myForm">
+  <label style="margin-left:30px">
+    <input type="radio" ng-model="value" value="bars" ng-change="draw()">
+    Bars
+  </label><br/>
+  <label style="margin-left:30px">
+    <input type="radio" ng-model="value" value="circles" ng-change="draw()">
+    Circles
+  </label><br/>
+  <label style="margin-left:30px">
+    <input type="radio" ng-model="value" value="circlePulse" ng-change="draw()">
+    CirclePulse
+  </label><br/>
+ </form>
+</div>
+
+<div style="margin-left:250px; margin-top:-48px; width:150px">
+<input ng-change="draw()" ng-model="colorNumber" type="range" id="myRange" value="255" min="1" max="255">
+<button ng-click="draw(255)" style="margin-left:50px; margin-top:4px">Reset</button>
+
+<!-- <div style="margin-top:-69px; margin-left:180px"> -->
+<div style="margin: -70px 0 0 180px;">
+<form name="backgroundimageForm">
+  <select id="mySelect" size="4" style="background-color:grey;">
+    <option ng-model="backgroundimage" value="default" ng-click="updateBackground('default')">IMG1</option>
+    <option ng-model="backgroundimage" value="beach" ng-click="updateBackground('beach')" >IMG2</option>
+    <option ng-model="backgroundimage" value="bottles" ng-click="updateBackground('bottles')">IMG3</option>
+    <option ng-model="backgroundimage" value="hill" ng-click="updateBackground('hill')">IMG4</option>
+  </select>
+</form>
+</div>
+
+</div>
+
+<label style="margin: 4px 0 0 21px;">
+  <input ng-model="arrayLength" ng-change="draw()" style="width:31px; height:20px; font-weight:normal"></input> Length
+</label>
+<label style="margin: 4px 0 0 2px;">
+  <input ng-model="decibels" ng-change="draw()" style="width:31px; height:20px; font-weight:normal"></input> Decibels(-)
+</label>
+

@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+}
+
+rect {
+  // fill:rgb(0,0,255);
+  stroke-width:3;
+  // stroke:rgb(0,0,0); 
+}
+
+// circle {
+//   fill: #94d31b; 
+// }
+
+#main {
+  display: inline-block;
+  float: right;
+  height: 100vh;
+  width: 80vw;
+  
+  // height: 800px;
+  // width: 400px;
+	background: #000000;
+}
+
+#holder {
+  background: #FFFFFF;
+  height: 100px;
+  width: 100px;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@import 'sidebar/main';
+@import 'home/main';
+@import 'contact/main';
+@import 'footer/main';
+// @import 'slider/angular-awesome-slider.min.css';
